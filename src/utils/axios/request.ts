@@ -13,7 +13,7 @@ import MOMERY from '../Memo/index.js';
 
 // import { Instance, RequestOptions, RequestParams, Response, Methods } from './server';
 
-const BASE_URL = '';
+const BASE_URL = 'http://192.168.20.224:9070';
 
 let instance = axios.create();
 instance.defaults.timeout = 30000000;
