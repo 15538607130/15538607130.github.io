@@ -1,0 +1,10 @@
+// 设置元素宽高
+.size(@width; @height) {
+  width: @width;
+  height: @height;
+}
+
+// 宽高等比
+.square(@size) {
+  .size(@size; @size);
+}

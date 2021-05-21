@@ -1,0 +1,41 @@
+// 全局通用样式
+@import 'theme.less';
+@import 'normalize.less';
+@import 'mixins/index.less';
+@import 'reset.less';
+
+// 版心
+// 若无版心，自适应布局，去掉 margin
+.container {
+  display: block;
+  // margin-left: auto;
+  // margin-right: auto;
+  min-width: 1024px;
+}
+
+// 让应用 hidden 属性的 html 元素隐藏，对 IE 10- 的浏览器需要应用 display 属性
+[hidden] {
+  display: none !important;
+}
+
+.hidden {
+  display: inline !important;
+}
+
+.block {
+  display: block !important;
+}
+
+
+// 浮动
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix {
+  .clearfix()
+}

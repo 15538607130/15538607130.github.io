@@ -1,0 +1,42 @@
+// 文本样式
+
+.tl() {
+  text-align: left;
+}
+
+
+.tc() {
+  text-align: center;
+}
+
+
+.tr() {
+  text-align: right;
+}
+
+
+// 超出 num 行展示省略号
+.text-overflow(@num) {
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: @num;
+  -webkit-box-orientL: vertical;
+}
+
+
+// 强制换行
+.text-word-break() {
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+
+// 禁止换行
+.text-forbidden-break() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
